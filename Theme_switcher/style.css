@@ -1,0 +1,62 @@
+body[data-theme="hawaii"] {
+  --header: #ee76b0;
+  --main: #9bcdff;
+  --footer: #9bd393;
+}
+body[data-theme="dark"] {
+  --header: #811b4c;
+  --main: rgb(16, 31, 90);
+  --footer: rgb(5, 47, 2);
+}
+body[data-theme="light"] {
+  --header: #f1e5d6;
+  --main: #f9f9bf;
+  --footer: #f1e5d6;
+}
+
+header {
+  background-color: var(--header);
+  min-height: 25vh;
+}
+main {
+  background-color: var(--main);
+  min-height: 48vh;
+}
+footer {
+  background-color: var(--footer);
+  min-height: 25vh;
+}
+
+header,
+main,
+footer {
+  width: 99vw; /* Fylder hele vinduets bredde */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 2rem; /* Giver lidt luft inde i sektionerne */
+  border: 1px solid black; /* Sort kant rundt om sektionerne */
+}
+
+#switcher {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: sans-serif;
+}
+
+header p {
+  position: fixed;
+  top: 1rem;
+  right: 9rem;
+  font-size: 20px;
+}
+
+footer p {
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
