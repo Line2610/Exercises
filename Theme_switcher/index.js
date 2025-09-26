@@ -1,16 +1,16 @@
 "use strict";
 
-// const switcher = document.getElementById("switcher");
+const switcher = document.getElementById("switcher");
 
-// switcher.addEventListener("change", function () {
-//   document.body.setAttribute("data-theme", this.value);
-// });
-
-const bodyElm = document.querySelector("body");
-
-doucument.querySelector("#switcher").addEventListener("change", (evt) => {
-  bodyElm.dataset.theme = evt.target.value;
+switcher.addEventListener("change", function () {
+  document.body.setAttribute("data-theme", this.value);
 });
+
+// const bodyElm = document.querySelector("body");
+
+// doucument.querySelector("#switcher").addEventListener("change", (evt) => {
+//   bodyElm.dataset.theme = evt.target.value;
+// });
 
 // switcher er din dropdown (<select>).
 // Når brugeren vælger et nyt tema i dropdownen, udløses "change"-eventet.
